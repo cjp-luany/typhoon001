@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Typhoon vision 0.01</string>
+    <string name="action_settings">Settings</string>
+    <string name="list_btn">查询该年份</string>
+    <string name="info_btn">查询台风登陆点信息</string>
+    <string name="jump">统计</string>
+    <string name="link_btn">超链接</string>
+    <string name="word_btn">富文本</string>
+    <string name="map_btn">地图</string>
+    <string name="geo_btn">台风路径</string>
+    <string name="ib_marker">标记</string>
+    <string name="prepare">防范</string>
+    <string name="cul_btn">趋势图</string>
+</resources>

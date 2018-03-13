@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false" />
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20dp"
+        android:id="@+id/ib_marker"
+        android:text="@string/ib_marker"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="60dp"/>
+    />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_marker"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="#ffffff"
+            android:visibility="gone"
+            android:clickable="true"><!-- 如果不添加这个属性，当点击布局时，会和地图点击事件干扰 -->
+            <ImageView
+                android:id="@+id/iv_img"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_img"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:textSize="14sp"
+                android:textColor="#000000"/>
+        </RelativeLayout>
+
+        </RelativeLayout>
+
+
+

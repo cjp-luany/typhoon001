@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_top_clientRaise"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/item_bg">
+
+        <LinearLayout
+            android:id="@+id/linearlayout_clientRise_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:descendantFocusability="beforeDescendants">
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/btn_back_normal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返回"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="百度地图Demo"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/mapView_client_raise"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.baidu.mapapi.map.MapView>
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/button_add"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:textSize="15dp"
+                android:textColor="@color/dark_brow"
+                android:background="@drawable/add_state"/>
+            <Button
+                android:id="@+id/button_sub"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/sub_state"
+                android:textSize="15dp"
+                android:textColor="@color/dark_brow"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
